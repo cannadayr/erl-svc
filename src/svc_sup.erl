@@ -26,10 +26,11 @@ start_link() ->
 %%                  type => worker(),       % optional
 %%                  modules => modules()}   % optional
 init([]) ->
+    Server = {svc_srv, {svc_srv, start_link, []},permanent,2000,worker,[svc_srv]},
     SupFlags = #{strategy => one_for_all,
                  intensity => 0,
                  period => 1},
-    ChildSpecs = [],
+    ChildSpecs = [Server],
     {ok, {SupFlags, ChildSpecs}}.
 
 %% internal functions
