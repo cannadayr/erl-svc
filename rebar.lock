@@ -1,1 +1,10 @@
-[].
+{"1.1.0",
+[{<<"base16">>,{pkg,<<"base16">>,<<"1.0.0">>},1},
+ {<<"rebar">>,
+  {git,"git://github.com/gordonguthrie/pometo.git",
+       {ref,"68ee15ca5ecef03edc4067f0d687aae33e901557"}},
+  0}]}.
+[
+{pkg_hash,[
+ {<<"base16">>, <<"283644E2B21BD5915ACB7178BED7851FB07C6E5749B8FAD68A53C501092176D9">>}]}
+].
